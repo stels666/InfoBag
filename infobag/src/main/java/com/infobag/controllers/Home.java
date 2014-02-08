@@ -17,7 +17,8 @@ public class Home {
 		people.setName("name13");
 		people.setAge(2);
 		
-		Registry.getPeopleService().save(people);
+		
+		Registry.getPeopleService().getAll();
 		return new ModelAndView("hello", "message", "hi");
 	}
 
